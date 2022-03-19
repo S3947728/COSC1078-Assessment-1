@@ -1,0 +1,40 @@
+body{
+  font-family: 'Ubuntu Mono', monospace;
+  padding: 2px;
+  background-color: #84CAE7;
+}
+.bannerhead {
+  padding: 60px;
+  background-color: #136F63;
+  color: White;
+  text-align:center;
+  font-size: 30px;
+}
+.bannermini {
+  padding:20px;
+  background-color: #0D5945;
+  color:White;
+  text-align: left;
+  font-size: 24px;
+}
+.btn-group button {
+  font-family: 'Ubuntu Mono', monospace;
+  background-color: #74E7DB;
+  border: 1px solid black;
+  color: black;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+}
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none;
+}
+.btn-group button:hover {
+  background-color: #2EDCCA;
+}
