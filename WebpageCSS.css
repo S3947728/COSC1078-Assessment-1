@@ -1,5 +1,6 @@
 body{
   font-family: 'Ubuntu Mono', monospace;
+  font-size: 16px
   padding: 2px;
   background-color: #84CAE7;
 }
@@ -37,4 +38,33 @@ body{
 }
 .btn-group button:hover {
   background-color: #2EDCCA;
+}
+.selfie {
+  float: right;
+  margin: auto;
+  width: 333.75px;
+  height: 445.5px;
+  border:2px solid #22AAA1;
+}
+.borderselfie {
+  border-radius: 25px;
+  border: 3px solid #2EDCCA;
+  background-color: White;
+  padding:20px;
+  width:850px;
+  height: 400px;
+  font-size: 24px;
+}
+.textbox {
+  border-radius: 25px;
+  border: 3px solid #2EDCCA;
+  background-color: White;
+  padding:20px;
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 18px;
+}
+hr.divider {
+  border-top: 5px solid #0D5945;
+  border-radius: 2.5px;
 }
