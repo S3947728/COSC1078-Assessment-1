@@ -68,3 +68,15 @@ hr.divider {
   border-top: 5px solid #0D5945;
   border-radius: 2.5px;
 }
+details > summary {
+  padding: 4px;
+  max-width: 100%;
+  background-color: #74E7DB;
+  border: 1px solid black;
+  cursor: pointer;
+}
+details > p {
+  background-color: #2EDCCA;
+  padding: 4px;
+  margin: 0;
+}

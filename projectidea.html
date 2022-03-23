@@ -25,31 +25,77 @@
       <h4>Overview</h4>
     </div>
     <div>
-      <p class="textbox">qwerty</p>
+      <p class="textbox">
+        The proposed project idea is to create a web extension for Chrome that would compare prices of products sold specifically by vendors specializing in anime and manga merchandise within Melbourne, such as Minotaur, One Stop Anime and Critical Hit, and online vendors that deliver to Australia such as AmiAmi and Kotobukiya. It is intended to make shopping online easier by comparing prices between Melbourne vendors via the extension for the same product, eliminating the need for having to seek out and have multiple tabs to find the prices for a piece of merchandise, saving time and effort for the customer. It would display the varying prices and availability across several vendors, as well as sales going on for certain figures or discounted versions due to being preowned, ensuring that customers can be informed of their next purchase and save money by shopping around.
+      </p>
     </div>
     <div class="bannermini">
       <h4>Motivation</h4>
     </div>
     <div>
-      <p class="textbox">qwerty</p>
+      <p class="textbox">
+        This motivation behind the project is intended for the anime and manga hobbyist community, writing this as a member of the community. Speaking from experience, anime hobbyists often spend a lot of time and effort scouring websites seeking the best offers to get anime merchandise for series they love the most and the project is intended to help streamline that process while also getting customers the best price for their purchase.
+      </p>
+    </div>
+    <div>
+      <details>
+        <summary>
+          Price Comparison: Nendoroid Bedivere
+        </summary>
+        <img src="images/PCBedivere.png" alt="PCBedivere">
+        <img src="images/nenbedivere.png" alt="NenBedivere">
+        <figcaption class="textbox"><b>Figure 5</b> <i>Nendoroid Bedivere</i>,ORANGE ROUGE, 06/2021</figcaption>
+      </details>
+    </div>
+    <div>
+      <details>
+        <summary>
+          Price Comparison: Scale Figure Snow Miku
+        </summary>
+        <img src="images/PCSnowMiku.png" alt="PCSnowMiku">
+        <img src="images/ScaleSnowMiku.png" alt="ScaleSnowMiku">
+        <figcaption class="textbox"><b>Figure 6</b> <i>Snow Miku: Snow Princess Ver.</i>,Good Smile Company, 08/2021</figcaption>
+      </details>
+    </div>
+    <div>
+      <details>
+        <summary>
+          Price Comparison: Model Kit Zoid Liger
+        </summary>
+        <img src="images/PCZoid.png" alt="PCZoid">
+        <img src="images/KitZoid.png" alt="KitZod">
+        <figcaption class="textbox"><b>Figure 7</b> <i>RZ-041 Liger Zero Jager Marking Plus Ver.</i>,Kotobukiya, 02/2021</figcaption>
+      </details>
+    </div>
+    <div>
+      <p class="textbox">In addition, I gathered a small sample of data from 3 different types of anime merchandise, referenced by the merchandise type and the three stores and found the price from 3 vendors for each type of merchandise to show the price discrepancy and how much one could potentially save if the project is successful in its job. The biggest price difference was the Snow Miku Price comparison, by switching from Anime Oz to Amiami shows $203 saved by switching to a different vendor. However, the process of finding each and every vendor to compare prices was a nightmare and as such could easily be simplified down into a web extension and save a lot of time and effort on the user’s behalf. </p>
     </div>
     <div class="bannermini">
       <h4>Indepth Description</h4>
     </div>
     <div>
-      <p class="textbox">qwerty</p>
+      <p class="textbox">
+        The Project is intended to serve as a web extension that can be used in Chrome, so it can be convenient and be accessed whenever the user will be shopping online on websites. How it is imagined acting, is that when a user has found a figure page in the middle of their shopping experience, the extension would be opened by the user and input the keywords of the figure to start the process. For the sake of the description, an example of such an input would be “1/7 Scale Figure Doki Doki Hoshimoto Yukari”, to describe the language that is used when it comes to anime merchandise. <br> <br>
+        What would happen behind the scenes is that the web extension would then use web scrapers to comb through the HTML code of a list of predetermined vendors that operate and ship to Australia, such as the previously mentioned in the overview among many others like Kaika, Anime-Oz and GundamExpressAustralia. It would first search through websites to see whether the vendor holds the same figure as requested, filtering out vendors that don’t provide a match. The extension would then determine the pricing of the vendor from the HTML coding using a web scraping service to gather the data, checking for prices and in specific cases like AmiAmi, the currency that is stated (as AmiAmi defaults to USD for its pricing scale). Exceptions will be written for when the pricing is missing or if an Out of Stock is detected, removing it from the hypothetical list generated at the end and preventing false positives in the project. In addition to price data scraping, other optional tags can be displayed along with the scraping. These will include tags like pre-owned merchandise, whether it comes with free shipping or if a sale or a discount can be applied to the final price of the figure. Once everything is calculated, the data will be formatted into a scrollable list on the browser in which the user can peruse at their own pace and thus have access to vendors that may have been looked over in the buying process. Each entry in the list would then have a link to the site and thus let the user easily access their better purchase and ultimately satisfy the need to get a better deal. In addition, for the sake of visibility in the extension, the list would not reiterate the same name over and over but only list the vendor and their logo for visibility along with the pricing for a concise display of data.<br> <br>
+        Furthermore, there will be an allowance for a degree of customization for the user to select. Since the extension pulls from a predetermined list of approved vendors, users will be allowed to blacklist certain vendors as they wish from the extension and prevent them appearing on any lists generated. In addition, they can blacklist tags such as pre-owned to avoid certain versions of products in accordance with user preference. Lastly, a dark mode will be provided as an option in customization for users who either prefer or require it.
+      </p>
     </div>
     <div class="bannermini">
       <h4>Tools and Skills Requirements</h4>
     </div>
     <div>
-      <p class="textbox">qwerty</p>
+      <p class="textbox">
+        Even though to create a Google Chrome Extension requires ‘HTML, CSS and Javascript’ (Google 2014, paragraph 1), the project can be created using the Python programming language. This programming language choice is determined primarily because it is the language I am most experienced as well as being able to take advantage of Scrapy, a Python library that is an open-source web scraper and thus can gather the data needed for the project to function. The Python program would then be converted into Javascript using a tool such as Rapydscript according to information provided by PythonSpot (PythonSpot 2015) and thus can be used by Chrome. As well, HTML and CSS can be achieved and coded by utilizing Atom and Github to create the HTML framework necessary for the extension to work.  <br> <br>
+        The primary skills needed are proficiency in the language of Python to build the actual functions of the extension and HTML/CSS to build the framework to which the extension will work in Google Chrome. Under Python would require learning how to operate and effectively use Scrapy to gather the data necessary to the core component of the project and thus take some time to learn and effectively use. The other key component is learning to use HTML and CSS to create the appearance of the extension and generation of a list, which will most likely require a team of two to work on and figure out. The project itself can be considered feasible for newer students but the main concern is whether there is enough time in order to get it completed.
+      </p>
     </div>
     <div class="bannermini">
       <h4>Outcome</h4>
     </div>
     <div>
-      <p class="textbox">qwerty</p>
+      <p class="textbox">
+        If the project is successful, the ideal outcome would be to publish the software onto Google Chrome’s Web Store page as a standalone web extension and thus can be used as a tool for anyone to download and help streamline their buying purchases at least if they’re located in Australia or if they’re able to receive shipment. This solves the issue of having to seek out the different prices and therefore putting more effort than there needs to be. The development itself will teach me a lot more about how web scrapers operate and how businesses like Honey can do things like find discounts for purchases.
+      </p>
     </div>
   </body>
 </html>
