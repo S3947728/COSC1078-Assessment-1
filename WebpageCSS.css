@@ -18,6 +18,9 @@ body{
   text-align: left;
   font-size: 24px;
 }
+/*
+taken from https://www.w3schools.com/howto/howto_css_button_group.asp
+*/
 .btn-group button {
   font-family: 'Ubuntu Mono', monospace;
   background-color: #74E7DB;
@@ -55,6 +58,7 @@ body{
   height: 400px;
   font-size: 24px;
 }
+/* taken from https://www.computerhope.com/issues/ch001392.htm*/
 .textbox {
   border-radius: 25px;
   border: 3px solid #2EDCCA;
@@ -68,6 +72,7 @@ hr.divider {
   border-top: 5px solid #0D5945;
   border-radius: 2.5px;
 }
+/* taken from https://www.w3schools.com/tags/tag_summary.asp*/
 details > summary {
   padding: 4px;
   max-width: 100%;
